@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faq>
+    <header>
+        <title>Întrebări frecvente</title>
+    </header>
+    <content>
+        <questions>
+            <question id="q1">
+                <questionText>Care sunt orele de funcționare?</questionText>
+                <answer>Grădinița este deschisă de luni până vineri, între orele 8:00 și 18:00.</answer>
+            </question>
+            <question id="q2">
+                <questionText>Cum pot înscrie copilul meu?</questionText>
+                <answer>Puteți înscrie copilul completând formularul de pe site sau contactându-ne direct la numărul de telefon sau email-ul furnizat.</answer>
+            </question>
+            <question id="q3">
+                <questionText>Ce activități sunt oferite?</questionText>
+                <answer>Oferim o varietate de activități educative și recreative, inclusiv desen, pictură, muzică, jocuri în aer liber și excursii educative.</answer>
+            </question>
+        </questions>
+    </content>
+</faq>

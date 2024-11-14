@@ -1,0 +1,43 @@
+<footer>
+    <h2>Întrebări frecvente</h2>
+    <ul>
+        <li><a href="#q1">Care sunt orele de funcționare?</a></li>
+        <li><a href="#q2">Cum pot înscrie copilul meu?</a></li>
+        <li><a href="#q3">Ce activități sunt oferite?</a></li>
+    </ul>
+    <div id="q1"><strong>Care sunt orele de funcționare?</strong>
+        <p>Grădinița este deschisă de luni până vineri, între orele 8:00 și 18:00.</p>
+    </div>
+    <div id="q2"><strong>Cum pot înscrie copilul meu?</strong>
+        <p>Puteți înscrie copilul completând formularul de pe site sau contactându-ne direct la numărul de telefon sau email-ul furnizat.</p>
+    </div>
+    <div id="q3"><strong>Ce activități sunt oferite?</strong>
+        <p>Oferim o varietate de activități educative și recreative, inclusiv desen, pictură, muzică, jocuri în aer liber și excursii educative.</p>
+    </div>
+</footer>
+
+<script>
+    function loadXML()
+    {
+        //Crearea unui obiect XMLHTTPRequest pentru a incarca un document XML
+        var xhttp = new HMLhttpRequest();
+        xhttp.onreadystatechange = function()
+        {
+            if (this.readyState == 4 && this.status == 200)
+                {
+                    //incarcarea documentului XML
+                    var xmlDoc = this.responseText;
+                    //afisarea continutului din XML
+                    displayXML(xmlDoc);
+                }
+            
+        }
+        xhttp.open("GET", "xml1.xml", true);
+        xhttp.send();
+    }
+    function displayXML(xmlDoc)
+    {
+        //afidarea continutlui din XML in div-ul cu id-ul "output"
+        docuemnt.getElementById("Question").innerHTML = xmlDoc;
+    }
+</script>
